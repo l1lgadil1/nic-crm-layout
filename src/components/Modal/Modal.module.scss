@@ -1,0 +1,129 @@
+.modal{
+  display: flex;
+  justify-content:center ;
+  align-items: center;   
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  
+  .closeBtn{
+    position: absolute;
+    top: 25px;
+    right: 50px
+  }
+  .content{
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+  margin: 20px;
+  height: 85vh;
+  padding: 40px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  }
+  .btn{
+    width: 100%;
+  }
+  .categories{
+    margin: 20px 0;
+    display: flex;
+    align-items:center;
+    gap: 5px;
+  }
+  .p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B7B9B9;
+  }
+  
+  .separate{
+    display: flex;
+    .separate1{
+      padding-right: 40px;
+      border-right: 1px solid #D9D9D9;
+    }
+    .separate2{
+      margin-left: 40px;
+      width: 330px;
+      .stocks{
+        display: flex;
+        gap: 5px;
+        align-items:'center';
+        flex-wrap: wrap;
+      }
+      .separate2Heading{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        opacity: 0.7;
+
+      }
+    }
+  }
+  .admin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .input{
+      padding: 10px 15px;
+      outline: none;
+      border: 1px solid #CDCDCB;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1F201C;
+      &::placeholder{
+          font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1F201C;
+      }
+    }
+    .searchBar{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #CDCDCB;
+      width: 480px;
+      border-radius: 10px;
+      padding: 10px 15px;
+
+      input{
+        outline: none;
+        border:none;
+        width: 100%;
+      }
+    }
+    .modalCard{
+      display: flex;
+      justify-content: space-between;
+      align-items:'center';
+      overflow: auto;
+    }
+  }
+
+  .adminWrap{
+    border-bottom: 2px solid #D9D9D9;
+  }
+  .footer{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items:'center';
+
+    .footer1{
+      display: flex;
+     gap: 20px;
+     align-items:'center'; 
+    }
+  }
+}
+
+

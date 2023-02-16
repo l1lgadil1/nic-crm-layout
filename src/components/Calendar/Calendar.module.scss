@@ -1,0 +1,208 @@
+.wrapper{
+  margin-top: 10px;
+  padding: 13px 0;
+  background-color: white;
+  border-radius:10px;
+  z-index: 0;
+}
+
+.card{
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.month{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+
+.top{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 10px;
+}
+
+.daysWrap{
+  display: flex;
+  align-items:'center';
+  width: 100%;
+  justify-content: space-around;
+  .days{
+  display: flex;
+  flex-direction: column;
+  align-items:'center';
+  justify-content: center;
+  span{
+    width: 17px;
+    height: 17px;
+  }
+  .day{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    /* or 138% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #545454;
+  }
+
+  .week{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #B6B6B6;
+  }
+}
+}
+
+.bot{
+ display: grid;
+ grid-template-columns: 30% 1fr;
+  padding: 15px 0;
+  border-bottom: 1px solid #ECECEC;
+  .botCard{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+
+  }
+  .botCardPaused{
+     display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+    span{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      height: 25px;
+      width: 25px;
+      justify-content: center;
+      display: flex;
+      border-radius:10px;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background-color: #fcfcfc;
+      color: #e6e6e6;
+
+    }
+  }
+  .botCardTextDayoff{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      height: 25px;
+      width: 25px;
+      justify-content: center;
+      display: flex;
+      border-radius:10px;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      background-color: #85dd4f;
+      color: #b4b3b3;
+  }
+  .botCardText{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      height: 25px;
+      width: 25px;
+      justify-content: center;
+      display: flex;
+      border-radius:10px;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background-color: #F2F2F2;
+      color: #868686;
+  }
+  .botLeftSide{
+
+
+    .botLeftSideCard{
+      cursor:pointer;
+      display: flex;
+      gap: 8px;
+      align-items:center;
+
+      span{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #000000;
+      }
+    }
+    .botLeftSideCardPaused{
+      cursor:pointer;
+      display: flex;
+      gap: 8px;
+      align-items:center;
+
+      span{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #000000;
+      }
+    }
+  }
+}
+
+
+// @media (max-width:2000px) {
+//   .top{
+//     grid-template-columns: 30% auto;
+//   }
+//   .bot{
+//     grid-template-columns: 30% auto;
+//   }
+// }
+
+
+// @media(max-width: 1024px){
+//    .top{
+//     grid-template-columns: 20% auto;
+//   }
+//   .bot{
+//     grid-template-columns: 20% auto;
+//   }
+// }
+// @media (max-width:960px) {
+//     .top{
+//     grid-template-columns: 30% auto;
+//   }
+//   .bot{
+//     grid-template-columns: 30% auto;
+//   }
+// }
+// @media (max-width:600px) {
+//   .bot{
+//     gap: 27vw;
+//   }
+// }

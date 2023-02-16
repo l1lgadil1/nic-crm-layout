@@ -1,0 +1,13 @@
+.wrapper{
+  padding: 21px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid #EDEDED;
+  }
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
