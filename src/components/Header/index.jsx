@@ -1,22 +1,13 @@
 import React from 'react';
 
-import styles from './Header.module.scss';
-import LeftSide from './LeftSide';
-import RightSide from './RightSide';
-import Modal from '../Modal';
+import HeaderRight from '../HeaderRight';
+import HeaderLeft from '../HeaderLeft';
 
-const Header = () => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-
-  const onHandleModal = () => {
-    setIsModalOpen((prev) => !prev);
-  };
-
+const Header = ({ style }) => {
   return (
-    <div className={styles.wrapper}>
-      <LeftSide styles={styles} />
-      <RightSide styles={styles} onHandleModal={onHandleModal} />
-      {isModalOpen && <Modal onHandleModal={onHandleModal} />}
+    <div className={style.header}>
+      <HeaderLeft style={style} />
+      <HeaderRight style={style} />
     </div>
   );
 };

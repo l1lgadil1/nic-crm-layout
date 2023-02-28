@@ -1,0 +1,157 @@
+.table{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  padding-right: 15px;
+  padding-left: 20px;
+}
+
+
+.month{
+padding-top:5px ;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #000000;
+}
+.weeks{
+  display: flex;
+  width: 100%;
+
+}
+.days{
+
+  span{
+    height: 17px;
+    width: 27px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  .objDay{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #545454;
+
+  }
+  .objWeek{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #B6B6B6;
+  }
+}
+
+.leftSide{
+  display: flex;
+  gap: 10px;
+  align-items:center;
+}
+
+.header{
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 10px;
+}
+
+.cardwrap{
+  padding-top: 15px;
+   border-top: 1px solid #ECECEC;
+   border-bottom: 1px solid #ECECEC;
+  padding-bottom: 15px;
+}
+
+.discountDays{
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+}
+
+
+
+.discountDay{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:  #F2F2F2;
+  color:#868686;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  border-radius:10px;
+}
+
+.discountDayPaused{
+  opacity: 0.3;
+}
+
+// @media  (max-width:2000px){
+//     .table{
+//       grid-template-columns: 30vw 1fr;
+//     }
+// }
+
+
+.discountTextPaused{
+  font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #B7B9B9;
+}
+
+.discountTextActive{
+  font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #000000;
+}
+.discountEditImg{
+  cursor: pointer;
+}
+
+.discountBtn{
+  cursor: pointer;
+}
+
+.breakDay{
+ background-color: #EEF3E0; 
+ font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+display: flex;
+align-items: center;
+text-align: center;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #868686;
+
+}

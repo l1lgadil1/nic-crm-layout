@@ -1,0 +1,60 @@
+.wrap{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.closeBtn{
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.discountCount{
+  padding: 9px 15px;
+  background-color:white;
+  border: 1px solid #CDCDCB;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.searchByName{
+  display: flex;
+  width: 480px;
+  justify-content: space-between;
+  padding: 9px 12px;
+  border: 1px solid #CDCDCB;
+
+
+  border-radius: 10px;
+  div{
+    svg{
+      margin-right: 12px;
+    }
+  }
+  input{
+    width: 100%;
+    outline: none;
+    border:none;
+      font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(31, 32, 28, 0.5);
+
+  &::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(31, 32, 28, 0.5);
+  }
+  }
+}
+.price{
+  padding: 9px 15px;
+  border: 1px solid #CDCDCB;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(31, 32, 28, 0.5);
+}

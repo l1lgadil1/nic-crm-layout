@@ -1,0 +1,240 @@
+
+
+.category{
+  display: flex;
+  justify-content: space-between;
+  .categoryLeftSide{
+display: flex;
+gap:8px;
+.addDiscount{
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  background-color: #A1D214;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  cursor: pointer;
+
+  svg{
+    margin-right: 9px;
+  }
+}
+.buttons{
+  display: flex;
+
+  .buttonActive{
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #A1D214;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3D3F38;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  }
+  .buttonNonactive{
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E4E4E4;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(34, 34, 34, 0.7);
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  }
+
+}
+.discountType{
+  padding: 4px 15px;
+  display: flex;
+  gap: 8px;
+
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+.discountTypeImg{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+  div{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    span{
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #C4C4C4;
+    }
+    strong{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #000000;
+    }
+    strong >span{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 19px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #000000;
+    }
+  }
+}
+.period{
+  padding: 4px 15px;
+  display: flex;
+  gap: 64px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  .periodTitle{
+    font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #C4C4C4;
+
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    strong{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+  
+    color: #000000;
+    }
+  }
+
+  .periodImg{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  div{
+    display: flex;
+  }
+}
+}
+}
+
+
+.search{
+  flex-direction: row-reverse;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: white;
+  border-radius:10px;
+  cursor: pointer;
+}
+
+.searchActive{  
+  flex-direction: row-reverse;
+  width: 100%;
+  transition:all 0.4s ease-in-out;
+  position: relative;
+  background-color:white;
+  border-radius:10px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+}
+.searchInputActive{
+  width: 100%;
+  outline: none;
+  border:none;
+  padding-left: 30px;
+}
+
+.searchWrap{
+  display: flex;
+  justify-content: end;
+}
+
+.searchIco{
+  position: absolute;
+  left: 5px;
+  top: 8px;
+}
+.closeIco{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.datePicker{
+  outline: none;
+  width: 70px;
+  border:none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+
+.datePickerWrap{
+  display: flex;
+}
+
+.category{
+  position: relative;
+}
+
+.categoryPopup{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color: white;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  span{
+    &:hover{
+      opacity: 0.4;
+      background-color: gray;
+    }
+  }
+}
+

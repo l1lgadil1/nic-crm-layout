@@ -1,14 +1,17 @@
 import React from 'react';
+import style from './style.module.scss';
 
-import styles from './Calendar.module.scss';
-import CalendarCard from './CalendarCard';
+import CalendarCard from '../CalendarCard';
+import { monthsArr } from '../../db';
 
-const index = () => {
+const Calendar = () => {
   return (
-    <div className={styles.wrapper}>
-      <CalendarCard styles={styles} />
+    <div className={style.wrapper}>
+      {monthsArr.map((obj, index) => (
+        <CalendarCard month={obj.month} key={index} />
+      ))}
     </div>
   );
 };
 
-export default index;
+export default Calendar;

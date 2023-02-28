@@ -1,0 +1,26 @@
+.textarea{
+  margin-top: 10px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  height: 130px;
+  width: 880px;
+  outline: none;
+  font-family: 'Raleway';
+
+  font-style: normal;
+  border:none;
+  padding: 11px 353px 31px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  &::placeholder{
+      font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  }
+}
+
